@@ -221,7 +221,7 @@ button#limpar:hover {
 footer {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items:center;
     padding-bottom: 24px;
 }
 
