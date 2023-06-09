@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <link rel="stylesheet" href="style.css">
+    
+        <title>Decodificador de Texto</title>
+    </head>
+
+    <script src="script.js"></script>
+
+    <body>
+        <main>
+            <header class="logos">
+                <nav id="nav-link">
+                    <ul>
+                        <li class="social-media"><a href=https://www.linkedin.com/in/michelle-bessoni-56bb52143/ target="_blank"><img
+                                    src="img/linkedin.svg" alt="LinkedIn"><p class="description">LinkedIn</p></a></li>
+                        <li class="social-media"><a href=https://github.com/mbessoni/challenge-one-decodificador-br target="_blank"><img
+                                    src="img/github.svg" width="10px" alt="github"><p class="description">Github</p></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="entrada">
+                <textarea name="msgTxt" id="msgTxt" placeholder="Digite seu texto..."></textarea>
+                <div class="informacao"><img src="img/informe.svg" alt="informação"><sub>Aceita maiúsculas e acentos.</sub><sub><code>Ctrl</code> + <code>Z</code> Limpar.</sub></div>
+                <div class="inputGroup">
+                    <button type="button" class="criptografar" onclick="criptografar()">Criptografar</button>
+                    <button type="button" id="descriptografar" onclick="descriptografar()"
+                        disabled="false">Descriptografar</button>
+                </div>
+            </section>
+            <aside id="saida">
+                <div id="semMensagem">
+                    <img src="img/bonecoprincipal.svg" alt="Sem mensagem encontrada">
+                    <h2>Nenhuma mensagem encontrada.</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <textarea name="criptoTxt" id="msgCriptografada" readonly></textarea>
+                <div class="inputGroup">
+                    <button type="button" id="copiar" onclick="copiarTexto()">Copiar</button>
+                    <button type="button" id="limpar" onclick="limparTexto()"><img src="img/del.svg" alt="deletar"
+                            width="35"></button>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <p>Desenvolvido por Michelle Bessoni <br>
+                <a href="https://www.linkedin.com/in/michelle-bessoni-56bb52143/">Linkedin</a> e <a
+                    href="https://github.com/mbessoni/challenge-one-decodificador-br">Github</a>
+            </p>
+        </footer>
+    </body>
+    
+</html>
